@@ -19,6 +19,8 @@ char redPath[40];
 char neutralPath[40];
 char redPickup[40];
 char neutralPickup[40];
+int redSteps;
+int neutralSteps;
 int missionNum = 1;
 
 Servo arm;
@@ -270,24 +272,32 @@ bool pickMissionState() {
       strcpy(neutralPath, NEUTRAL_MISSION_1);
       strcpy(redPickup, RED_PICKUP_1);
       strcpy(neutralPickup, NEUTRAL_PICKUP_1);
+      redSteps = RED_STEPS_1;
+      neutralSteps = NEUTRAL_STEPS_1;
     }
     /*else if(missionNum == 2) {
       strcpy(redPath, RED_MISSION_2);
       strcpy(neutralPath, NEUTRAL_MISSION_2);
       strcpy(redPickup, RED_PICKUP_2);
       strcpy(neutralPickup, NEUTRAL_PICKUP_2);
+      redSteps = RED_STEPS_2;
+      neutralSteps = NEUTRAL_STEPS_2;
     }
     else if(missionNum == 3) {
       strcpy(redPath, RED_MISSION_3);
       strcpy(neutralPath, NEUTRAL_MISSION_3);
       strcpy(redPickup, RED_PICKUP_3);
       strcpy(neutralPickup, NEUTRAL_PICKUP_3);
+      redSteps = RED_STEPS_3;
+      neutralSteps = NEUTRAL_STEPS_3;
     }
     if(missionNum == 4) {
       strcpy(redPath, RED_MISSION_4);
       strcpy(neutralPath, NEUTRAL_MISSION_4);
       strcpy(redPickup, RED_PICKUP_4);
       strcpy(neutralPickup, NEUTRAL_PICKUP_4);
+      redSteps = RED_STEPS_4;
+      neutralSteps = NEUTRAL_STEPS_4;
     }*/
   }
   return true;
